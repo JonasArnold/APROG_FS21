@@ -6,7 +6,16 @@ namespace SW01
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello World!");
+      #region Bananabread
+      PrintUpper("Hello World!");
+      var key = Console.ReadKey();
+      Console.WriteLine($"Key pressed: {key.KeyChar}");
+      #endregion
+    }
+
+    private static void PrintUpper(string text)
+    {
+      Console.WriteLine(text.ToUpper());
     }
   }
 }
