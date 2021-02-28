@@ -4,6 +4,11 @@ namespace SW01.Adder
 {
   class Program
   {
+    /// <summary>
+    /// Program that sums up all integers in the cmd arguments.
+    /// </summary>
+    /// <param name="args">arguments from console</param>
+    /// <returns>error level <see cref="AdderError"/></returns>
     static int Main(string[] args)
     {
       AdderError error = AdderError.OK;
