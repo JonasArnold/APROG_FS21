@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SW01.Adder", "SW01.Adder\SW
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SW02.GC", "SW02.GC\SW02.GC.csproj", "{8BB71784-3DB6-4F39-9B18-00F7B1C9FFA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW03.DefaultParameterDemo", "SW03.DefaultParameterDemo\SW03.DefaultParameterDemo.csproj", "{5CA3C6BC-F118-464B-AE87-B94E460380DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SW03.DefaultParameterDemo", "SW03.DefaultParameterDemo\SW03.DefaultParameterDemo.csproj", "{5CA3C6BC-F118-464B-AE87-B94E460380DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW04.SysEnvDemo", "SW04.SysEnvDemo\SW04.SysEnvDemo.csproj", "{2C417CCB-735A-4718-920E-B170AEBA5A6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5CA3C6BC-F118-464B-AE87-B94E460380DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CA3C6BC-F118-464B-AE87-B94E460380DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CA3C6BC-F118-464B-AE87-B94E460380DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C417CCB-735A-4718-920E-B170AEBA5A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C417CCB-735A-4718-920E-B170AEBA5A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C417CCB-735A-4718-920E-B170AEBA5A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C417CCB-735A-4718-920E-B170AEBA5A6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
