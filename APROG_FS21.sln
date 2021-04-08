@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SW02.GC", "SW02.GC\SW02.GC.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SW03.DefaultParameterDemo", "SW03.DefaultParameterDemo\SW03.DefaultParameterDemo.csproj", "{5CA3C6BC-F118-464B-AE87-B94E460380DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW04.SysEnvDemo", "SW04.SysEnvDemo\SW04.SysEnvDemo.csproj", "{2C417CCB-735A-4718-920E-B170AEBA5A6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SW04.SysEnvDemo", "SW04.SysEnvDemo\SW04.SysEnvDemo.csproj", "{2C417CCB-735A-4718-920E-B170AEBA5A6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW06.Languages", "SW06.Languages\SW06.Languages.csproj", "{08F6CF6B-8640-4464-A1F3-FC570A0FFCEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{2C417CCB-735A-4718-920E-B170AEBA5A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C417CCB-735A-4718-920E-B170AEBA5A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C417CCB-735A-4718-920E-B170AEBA5A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08F6CF6B-8640-4464-A1F3-FC570A0FFCEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F6CF6B-8640-4464-A1F3-FC570A0FFCEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F6CF6B-8640-4464-A1F3-FC570A0FFCEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F6CF6B-8640-4464-A1F3-FC570A0FFCEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
