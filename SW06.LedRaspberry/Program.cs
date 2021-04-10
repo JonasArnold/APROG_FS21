@@ -9,7 +9,20 @@ namespace SW06.LedRaspberry
 
     static void Main(string[] args)
     {
-      SwitchLedSomeTimes(5);
+      Console.WriteLine("Starting led procedure, press any key to abort");
+
+      while(true)
+      {
+        // led pattern
+        SwitchLedSomeTimes(1);
+
+        // if a key was pressed => break loop
+        if(Console.KeyAvailable)
+        {
+          break;
+        }
+      }
+
       raspberryPi.ResetLedsToDefaultFunction();
     }
 

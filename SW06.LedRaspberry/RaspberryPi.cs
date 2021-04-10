@@ -22,6 +22,9 @@ namespace SW06.LedRaspberry
       WriteToFile($"{Constants.RaspberryLedFilePath}/{Constants.RaspberryRedLedName}/brightness", on ? "1" : "0");
     }
 
+    /// <summary>
+    /// Resets the green and red leds function to their default function.
+    /// </summary>
     public void ResetLedsToDefaultFunction()
     {
       WriteToFile($"{Constants.RaspberryLedFilePath}/{Constants.RaspberryGreenLedName}/trigger", "mmc0");
