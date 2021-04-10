@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SW03.DefaultParameterDemo",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SW04.SysEnvDemo", "SW04.SysEnvDemo\SW04.SysEnvDemo.csproj", "{2C417CCB-735A-4718-920E-B170AEBA5A6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW06.Languages", "SW06.Languages\SW06.Languages.csproj", "{08F6CF6B-8640-4464-A1F3-FC570A0FFCEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SW06.Languages", "SW06.Languages\SW06.Languages.csproj", "{08F6CF6B-8640-4464-A1F3-FC570A0FFCEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW06.NetCoreRaspberry", "SW06.NetCoreRaspberry\SW06.NetCoreRaspberry.csproj", "{B3EF70CC-3C93-4BE3-8BB1-3B9FD8C6B852}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW06.LedRaspberry", "SW06.LedRaspberry\SW06.LedRaspberry.csproj", "{64CEEF9B-9EFC-4C9C-9F2A-1AC624024865}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{08F6CF6B-8640-4464-A1F3-FC570A0FFCEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08F6CF6B-8640-4464-A1F3-FC570A0FFCEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08F6CF6B-8640-4464-A1F3-FC570A0FFCEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3EF70CC-3C93-4BE3-8BB1-3B9FD8C6B852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3EF70CC-3C93-4BE3-8BB1-3B9FD8C6B852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3EF70CC-3C93-4BE3-8BB1-3B9FD8C6B852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3EF70CC-3C93-4BE3-8BB1-3B9FD8C6B852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64CEEF9B-9EFC-4C9C-9F2A-1AC624024865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64CEEF9B-9EFC-4C9C-9F2A-1AC624024865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64CEEF9B-9EFC-4C9C-9F2A-1AC624024865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64CEEF9B-9EFC-4C9C-9F2A-1AC624024865}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
