@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using Utils;
 
 namespace SW06.NetCoreRaspberry
 {
@@ -7,13 +8,8 @@ namespace SW06.NetCoreRaspberry
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Waiting for debugger...");
-
       // waiting for debugger
-      while(System.Diagnostics.Debugger.IsAttached == false)
-      {
-        Thread.Sleep(100);
-      }
+      Util.WaitForDebugger();
 
       // debugger attached
       Console.WriteLine("Debugger found.");
