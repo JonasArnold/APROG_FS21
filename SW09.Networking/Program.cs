@@ -20,12 +20,13 @@ namespace SW09.Networking
       {
         if (Console.KeyAvailable)
         {
-          if (Console.ReadKey().Key == ConsoleKey.S)
+          var key = Console.ReadKey(true).Key;
+          if (key == ConsoleKey.S)
           {
             server = true;
             break;
           }
-          else if (Console.ReadKey().Key == ConsoleKey.C)
+          else if (key == ConsoleKey.C)
           {
             client = true;
             break;
@@ -50,7 +51,8 @@ namespace SW09.Networking
         {
           if (Console.KeyAvailable)
           {
-            if (Console.ReadKey().Key == ConsoleKey.Spacebar)
+            var key = Console.ReadKey(true).Key;
+            if (key == ConsoleKey.Spacebar)
             {
               break;
             }
@@ -78,34 +80,30 @@ namespace SW09.Networking
 
           string hostname = "";
           // choose which connection to request time from
-          while (true)
+          while (hostname == "" && stopped == false)
           {
             if (Console.KeyAvailable)
             {
-              if (Console.ReadKey().Key == ConsoleKey.O)
+              var key = Console.ReadKey(true).Key;
+              switch (key)
               {
-                hostname = timeServerHostname;
-                break;
-              }
-              else if (Console.ReadKey().Key == ConsoleKey.L)
-              {
-                hostname = "localhost";
-                break;
-              }
-              else if (Console.ReadKey().Key == ConsoleKey.R)
-              {
-                hostname = "eee-01176";
-                break;
-              }
-              else if (Console.ReadKey().Key == ConsoleKey.D)
-              {
-                hostname = "DESKTOP-JONAS";
-                break;
-              }
-              else if (Console.ReadKey().Key == ConsoleKey.Spacebar)
-              {
-                stopped = true;
-                break;
+                case ConsoleKey.O:
+                  hostname = timeServerHostname;
+                  break;
+                case ConsoleKey.L:
+                  hostname = "localhost";
+                  break;
+                case ConsoleKey.R:
+                  hostname = "eee-01176";
+                  break;
+                case ConsoleKey.D:
+                  hostname = "DESKTOP-JONAS";
+                  break;
+                case ConsoleKey.Spacebar:
+                  stopped = true;
+                  break;
+                default:
+                  break;
               }
             }
             Thread.Sleep(100);
