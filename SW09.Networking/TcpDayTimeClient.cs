@@ -5,7 +5,6 @@ namespace SW09.Networking
 {
   internal class TcpDayTimeClient
   {
-    private const string serverHostname = "time.nist.gov";
     private const int serverPort = 13;
 
     private readonly TcpClient tcpClient;
@@ -15,9 +14,9 @@ namespace SW09.Networking
     {
       this.tcpClient = new();
     }
-    public void Connect()
+    public void Connect(string hostname)
     {
-      this.tcpClient.Connect(serverHostname, serverPort);
+      this.tcpClient.Connect(hostname, serverPort);
       this.socket = this.tcpClient.Client;
     }
 
@@ -31,11 +30,8 @@ namespace SW09.Networking
       string line = "";
       using(StreamReader sr = new(tcpClient.GetStream()))
       {
-        // read as lines until it is not empty anymore
-        do
-        {
-          line = sr.ReadLine();
-        } while (line == "");
+        // read to end of stream
+        line = sr.ReadToEnd();
       }
       return line;
     }
