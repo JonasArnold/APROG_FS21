@@ -19,11 +19,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SW06.NetCoreRaspberry", "SW
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SW06.LedRaspberry", "SW06.LedRaspberry\SW06.LedRaspberry.csproj", "{64CEEF9B-9EFC-4C9C-9F2A-1AC624024865}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{3893BCF0-B205-4DB2-92E5-129EBFFA71CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "Utils\Utils.csproj", "{3893BCF0-B205-4DB2-92E5-129EBFFA71CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW07.RaspberryService", "SW07.RaspberryService\SW07.RaspberryService.csproj", "{ADC3DBC0-ECED-4771-A9A9-68D2681A20F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SW07.RaspberryService", "SW07.RaspberryService\SW07.RaspberryService.csproj", "{ADC3DBC0-ECED-4771-A9A9-68D2681A20F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW07.GpioDemo", "SW07.GPIO\SW07.GpioDemo.csproj", "{B8CC3B57-8394-4992-8A52-FC064A23CE4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SW07.GpioDemo", "SW07.GPIO\SW07.GpioDemo.csproj", "{B8CC3B57-8394-4992-8A52-FC064A23CE4B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SW08.AbstractShape", "..\..\..\Users\jonas\OneDrive\HSLU\Semester4\APROG\Beispiele\SW08\SW08_AbstractShape\SW08.AbstractShape.csproj", "{0319F149-A0EE-46C2-9D18-0BE6F6AE0784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW09.Networking", "SW09.Networking\SW09.Networking.csproj", "{97752A33-FA97-4A19-AC7A-5EBE4C7CC622}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,14 @@ Global
 		{B8CC3B57-8394-4992-8A52-FC064A23CE4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8CC3B57-8394-4992-8A52-FC064A23CE4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8CC3B57-8394-4992-8A52-FC064A23CE4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0319F149-A0EE-46C2-9D18-0BE6F6AE0784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0319F149-A0EE-46C2-9D18-0BE6F6AE0784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0319F149-A0EE-46C2-9D18-0BE6F6AE0784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0319F149-A0EE-46C2-9D18-0BE6F6AE0784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97752A33-FA97-4A19-AC7A-5EBE4C7CC622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97752A33-FA97-4A19-AC7A-5EBE4C7CC622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97752A33-FA97-4A19-AC7A-5EBE4C7CC622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97752A33-FA97-4A19-AC7A-5EBE4C7CC622}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
