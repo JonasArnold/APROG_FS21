@@ -1,21 +1,12 @@
-﻿using ChatClientLib;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System;
 using System.ComponentModel;
 using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
+using SW11.ChatClientLib;  // my chat client
+//using ChatClientLib;     // solution chat client
 
 namespace SW11.ChatClient
 {
@@ -41,7 +32,7 @@ namespace SW11.ChatClient
     private void buttonLogin_Click(object sender, RoutedEventArgs e)
     {
       this.buttonLogin.IsEnabled = false;
-      this.client = new ChatClientTcp(this.textboxHost.Text);
+      this.client = new ChatClientLib.ChatClient(this.textboxHost.Text);
       this.client.UserUpdate += UserUpdate;
       this.client.MessageReceived += MessageReceived;
       Thread.Sleep(500);
@@ -79,22 +70,30 @@ namespace SW11.ChatClient
       {
         lock (uiLock) // ensure that only one update at a time can be processed
         {
-          // this thread has access so it can update the UI thread
-          foreach (var user in this.Users)
-          {
-            if (e.Users.Contains(user) == false) // user gone
-            {
-              this.Users.Remove(user);
-            }
-          }
-
+          string prevSelected = this.SelectedUser;  // store previously selected
+          this.Users.Clear();
           foreach (var user in e.Users)
           {
-            if (this.Users.Contains(user) == false)  // new user
-            {
-              this.Users.Add(user);
-            }
+            this.Users.Add(user);
           }
+          this.SelectedUser = prevSelected;  // restore 
+
+          // this thread has access so it can update the UI thread
+          //foreach (var user in this.Users)
+          //{
+          //  if (e.Users.Contains(user) == false) // user gone
+          //  {
+          //    this.Users.Remove(user);
+          //  }
+          //}
+
+          //foreach (var user in e.Users)
+          //{
+          //  if (this.Users.Contains(user) == false)  // new user
+          //  {
+          //    this.Users.Add(user);
+          //  }
+          //}
         }
       }
       else
