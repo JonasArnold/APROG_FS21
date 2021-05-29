@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>IoT_SmartClient</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Back.png" />
+    <None Remove="Images\Down.png" />
+    <None Remove="Images\Forward.png" />
+    <None Remove="Images\Smile.png" />
+    <None Remove="Images\Up.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="M2MqttClientDotnetCore" Version="1.0.1" />
+    <PackageReference Include="NLog" Version="4.7.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IoT-Common\IoT-Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Back.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Down.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Forward.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Smile.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Up.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

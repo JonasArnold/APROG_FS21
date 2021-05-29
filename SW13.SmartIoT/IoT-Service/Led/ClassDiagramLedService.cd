@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="IoT_Service.Led">
+    <Position X="7.5" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAEAAAAAAAACAAAAAAAAAAAAAAAgAAAQCA=</HashCode>
+      <FileName>Led\Led.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IoT_Service.LedDirect">
+    <Position X="6.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Led\LedDirect.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ledPin" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="IoT_Service.LedSerial">
+    <Position X="8.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Led\LedSerial.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Com" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="IoT_Service.Com">
+    <Position X="11" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAQAACQAAAAAAAAAAAAAAAAAAAgI=</HashCode>
+      <FileName>Serial\Com.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unosquare.RaspberryIO.Gpio.GpioPin" Collapsed="true">
+    <Position X="4.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="IoT_Common.MqttDevice" Collapsed="true">
+    <Position X="7.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="IoT_Service.Raspberry">
+    <Position X="4" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAAAAAAAAAACAAAAIAAAABAAAAAAAQAAAAAAAQ=</HashCode>
+      <FileName>Raspberry.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="this[IoT_Common.LedColor]" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="IoT_Common.ILed">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
