@@ -49,6 +49,19 @@
                 <Image x:Name="ImageJoystickLeft" Width="24" Height="24" Source="/Images/Back.png" Margin="53,37,111,36" Opacity="0.3"/>
             </Grid>
         </GroupBox>
+        
+        <GroupBox Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Header="LEDs" Height="180" Width="100" HorizontalAlignment="Left" Margin="20">
+            <StackPanel>
+                <Ellipse x:Name="ImageLedRed" Margin="0 5" Width="30" Height="30" Fill="Red" Opacity="0.3"
+                         MouseUp="ImageLedRed_MouseUp"/>
+                <Ellipse x:Name="ImageLedYellow" Margin="0 5" Width="30" Height="30" Fill="Yellow" Opacity="0.3"
+                         MouseUp="ImageLedYellow_MouseUp"/>
+                <Ellipse x:Name="ImageLedGreen" Margin="0 5" Width="30" Height="30" Fill="Green" Opacity="0.3"
+                         MouseUp="ImageLedGreen_MouseUp"/>
+                <Ellipse x:Name="ImageLedBlue" Margin="0 5" Width="30" Height="30" Fill="Blue" Opacity="0.3"
+                         MouseUp="ImageLedBlue_MouseUp"/>
+            </StackPanel>
+        </GroupBox>
 
 
 

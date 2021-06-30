@@ -55,9 +55,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoT-Service", "SW13.SmartIo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoT-Common", "SW13.SmartIoT\IoT-Common\IoT-Common.csproj", "{087B2696-3EE9-4BB8-8726-AA65CD7DA435}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartClientUI", "SW13.SmartIoT\SmartClientUI\SmartClientUI.csproj", "{B0C83FAA-51F1-4508-BF19-45A68816346D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoT-SmartClient", "SW13.SmartIoT\IoT-SmartClient\IoT-SmartClient.csproj", "{12FBE783-1CCF-4132-BCE5-A60268D4BFE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pruefungsvorbereiten", "Pruefungsvorbereiten\Pruefungsvorbereiten.csproj", "{0D84C97A-49E4-4712-AD2A-B62C08073B0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW08.Logging", "SW08.Logging\SW08.Logging.csproj", "{A73EF9A6-55C9-4DE6-B3DD-114DA4CBFA00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,14 +167,18 @@ Global
 		{087B2696-3EE9-4BB8-8726-AA65CD7DA435}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{087B2696-3EE9-4BB8-8726-AA65CD7DA435}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{087B2696-3EE9-4BB8-8726-AA65CD7DA435}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B0C83FAA-51F1-4508-BF19-45A68816346D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0C83FAA-51F1-4508-BF19-45A68816346D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0C83FAA-51F1-4508-BF19-45A68816346D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0C83FAA-51F1-4508-BF19-45A68816346D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{12FBE783-1CCF-4132-BCE5-A60268D4BFE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{12FBE783-1CCF-4132-BCE5-A60268D4BFE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12FBE783-1CCF-4132-BCE5-A60268D4BFE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12FBE783-1CCF-4132-BCE5-A60268D4BFE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D84C97A-49E4-4712-AD2A-B62C08073B0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D84C97A-49E4-4712-AD2A-B62C08073B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D84C97A-49E4-4712-AD2A-B62C08073B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D84C97A-49E4-4712-AD2A-B62C08073B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A73EF9A6-55C9-4DE6-B3DD-114DA4CBFA00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73EF9A6-55C9-4DE6-B3DD-114DA4CBFA00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A73EF9A6-55C9-4DE6-B3DD-114DA4CBFA00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A73EF9A6-55C9-4DE6-B3DD-114DA4CBFA00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -180,7 +186,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3518CD3F-FA19-4E3B-BC1C-6C915A48084F} = {7077B184-A190-440B-A71B-D3907C2FA5AF}
 		{087B2696-3EE9-4BB8-8726-AA65CD7DA435} = {7077B184-A190-440B-A71B-D3907C2FA5AF}
-		{B0C83FAA-51F1-4508-BF19-45A68816346D} = {7077B184-A190-440B-A71B-D3907C2FA5AF}
 		{12FBE783-1CCF-4132-BCE5-A60268D4BFE0} = {7077B184-A190-440B-A71B-D3907C2FA5AF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

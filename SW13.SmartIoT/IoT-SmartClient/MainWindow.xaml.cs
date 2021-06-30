@@ -113,6 +113,26 @@ namespace IoT_SmartClient
       if ((e.Button & IoT_Common.JoystickButton.Center) != 0) this.SetImageOpacity(ImageJoystickCenter, ImageOpacityON);
     }
 
+    private void ImageLedBlue_MouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+    {
+      //this.client.led // TODO
+    }
+
+    private void ImageLedGreen_MouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+    {
+
+    }
+
+    private void ImageLedYellow_MouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+    {
+
+    }
+
+    private void ImageLedRed_MouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+    {
+
+    }
+
     #region Helpers
     public void SetEnabledState(Control controlElement, bool state)
     {

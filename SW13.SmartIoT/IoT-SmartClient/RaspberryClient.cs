@@ -18,9 +18,9 @@ namespace IoT_SmartClient
 
     public Joystick Joystick { get; private set; }
 
-    //public Led this[LedColor led]
+    //public Led this[LedColor led] // TODO
     //{
-    //    get { return leds[led]; }
+    //  get { return leds[led]; }
     //}
     #endregion
 
@@ -36,7 +36,7 @@ namespace IoT_SmartClient
         client.Subscribe(new string[] { Constants.BASE_TOPIC + "/#" }, new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE });
         client.Connect(id);
 
-        //leds = new Dictionary<LedColor, Led>(4);
+        //leds = new Dictionary<LedColor, Led>(4); // TODO
         //leds.Add(LedColor.Green, new Led(client, Constants.TOPIC_LEDS, LedColor.Green));
         //leds.Add(LedColor.Red, new Led(client, Constants.TOPIC_LEDS, LedColor.Red));
         //leds.Add(LedColor.Yellow, new Led(client, Constants.TOPIC_LEDS, LedColor.Yellow));
