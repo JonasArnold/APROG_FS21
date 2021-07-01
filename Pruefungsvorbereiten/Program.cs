@@ -5,6 +5,8 @@ namespace Pruefungsvorbereiten
 	{
 		public static void Main()
 		{
+			Utils.Util.WaitForDebugger();
+
 			/* TESTS */
 			// DatatypesMethodParameter.Test();
 			// Inheritance.Test();
