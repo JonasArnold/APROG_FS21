@@ -13,6 +13,5 @@ namespace IoT_Common
         #region properties
         JoystickButton State { get; }
         #endregion
-
     }
 }

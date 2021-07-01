@@ -1,4 +1,4 @@
-﻿using IoT_Common;
+﻿ using IoT_Common;
 using System;
 using System.Text;
 using uPLibrary.Networking.M2Mqtt;

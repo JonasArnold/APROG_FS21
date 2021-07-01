@@ -8,7 +8,8 @@ namespace Pruefungsvorbereiten
 			/* TESTS */
 			// DatatypesMethodParameter.Test();
 			// Inheritance.Test();
-			_ = new ExplicitInterfaceCall();
+			//_ = new ExplicitInterfaceCall();
+			LedTest.Test();
 		}
 
 
